@@ -30,7 +30,13 @@ export default function SuperHero({ heading, secondaryHeading, content }) {
 function Content({ primaryText, secondaryText, image, links }) {
   return (
     <div>
-      {image && <GatsbyImage alt={image.title} image={getImage(image)} />}
+      {image && (
+        <GatsbyImage
+          placeholder="blurred"
+          alt={image.title}
+          image={getImage(image)}
+        />
+      )}
       <MarkdownText {...primaryText} />
       <MarkdownText {...secondaryText} />
       {links && links.map((link) => <Button key={link.id} {...link} />)}

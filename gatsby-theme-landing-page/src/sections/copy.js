@@ -26,6 +26,7 @@ function CopyContent({ primaryText, secondaryText, image }) {
   return (
     <Container className={styles.copyContainer}>
       <GatsbyImage
+        placeholder="blurred"
         image={getImage(image)}
         alt={image.title || getText(primaryText)}
       />

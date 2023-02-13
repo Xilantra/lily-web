@@ -31,6 +31,7 @@ function TestimonialContent({ primaryText, secondaryText, avatar }) {
         {avatar && (
           <div className={styles.avatar}>
             <GatsbyImage
+              placeholder="blurred"
               image={getImage(avatar)}
               alt={avatar.title || getText(primaryText)}
             />

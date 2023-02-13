@@ -28,6 +28,7 @@ function BenefitContent({ primaryText, secondaryText, image, links = [] }) {
     <div className={styles.contentCard}>
       {image && (
         <GatsbyImage
+          placeholder="blurred"
           image={getImage(image)}
           alt={image.title || getText(primaryText)}
           className={styles.contentImage}

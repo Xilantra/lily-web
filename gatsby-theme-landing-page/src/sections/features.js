@@ -52,6 +52,7 @@ function Feature({
       </div>
       <div className={styles.imageColumn}>
         <GatsbyImage
+          placeholder="blurred"
           image={getImage(image)}
           alt={image.title || getText(primaryText)}
         />
