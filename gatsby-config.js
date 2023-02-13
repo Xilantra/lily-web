@@ -24,9 +24,9 @@ if (!spaceId || !accessToken) {
 // starter config
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Landing Page",
+    title: "Love, Lily Eatery",
     description:
-      "Create custom landing pages using Gatsby and Contentful with this Gatsby Starter",
+      "We believe in the simplicity and elegance of artisanal baking. Our micro-batch bakery is dedicated to crafting delicious and authentic breads, viennoiserie, pastries, pies and coffee, using only the finest, locally sourced ingredients.",
   },
   plugins: [
     {
@@ -36,12 +36,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Landing Page`,
-        short_name: `Gatsby Starter Landing Page`,
+        name: `Love, Lily Eatery`,
+        short_name: `Lily Eatery`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#000`,
-        display: `browser`,
+        display: `fullscreen`,
         icon: `src/assets/gatsby-monogram.png`,
       },
     },
