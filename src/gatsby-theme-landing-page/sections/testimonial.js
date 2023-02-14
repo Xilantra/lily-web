@@ -4,23 +4,26 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import {
   MarkdownText,
   getText,
-  Section,
+  // Section,
   Heading,
 } from "gatsby-theme-landing-page";
 
 export default function Testimonial({ heading, secondaryHeading, content }) {
   return (
-    <Section>
+    <>
       <Heading center>{heading}</Heading>
       <Heading secondary center>
         {secondaryHeading}
       </Heading>
-      <div className={styles.content}>
-        {content.map((item) => (
-          <TestimonialContent {...item} />
-        ))}
+
+      <div className={styles.wrapper}>
+        <div className={styles.content}>
+          {content.map((item) => (
+            <TestimonialContent {...item} />
+          ))}
+        </div>
       </div>
-    </Section>
+    </>
   );
 }
 
