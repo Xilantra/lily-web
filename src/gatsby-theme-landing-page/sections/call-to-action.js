@@ -2,21 +2,28 @@
 // built in components.
 import * as React from "react";
 import * as styles from "./call-to-action.module.css";
-import { MarkdownText, Button, Heading } from "gatsby-theme-landing-page";
+import {
+  MarkdownText,
+  Button,
+  Heading,
+  Container,
+} from "gatsby-theme-landing-page";
 
 export default function CallToAction({ heading, secondaryHeading, content }) {
   return (
-    <section className={styles.root}>
-      <Heading center>{heading}</Heading>
-      <Heading secondary center>
-        {secondaryHeading}
-      </Heading>
-      <div>
-        {content.map((c) => (
-          <Content key={c.id} {...c} />
-        ))}
-      </div>
-    </section>
+    <Container className={styles.container}>
+      <section className={styles.root}>
+        <Heading center>{heading}</Heading>
+        <Heading secondary center>
+          {secondaryHeading}
+        </Heading>
+        <div>
+          {content.map((c) => (
+            <Content key={c.id} {...c} />
+          ))}
+        </div>
+      </section>
+    </Container>
   );
 }
 
