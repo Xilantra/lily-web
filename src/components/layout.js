@@ -44,20 +44,26 @@ export default function Layout(props) {
   return (
     <div className={[cssVars.root, styles.root].join(" ")}>
       <Head {...props} />
-      <header className={styles.header}>
-        <Link to="/" activeClassName={styles.active} className={styles.navlink}>
-          <HomeIcon /> <span>Home</span>
-        </Link>
-        <Link
-          to="/today"
-          activeClassName={styles.active}
-          className={styles.navlink}
-        >
-          <TodaysIcon /> <span>Today</span>
-        </Link>
-        <Link to="#contact" className={styles.navlink}>
-          <ContactIcon /> <span>Contact Us</span>
-        </Link>
+      <header className={styles.wrapper}>
+        <div className={styles.header}>
+          <Link
+            to="/"
+            activeClassName={styles.active}
+            className={styles.navlink}
+          >
+            <HomeIcon /> <span>Home</span>
+          </Link>
+          <Link
+            to="/today"
+            activeClassName={styles.active}
+            className={styles.navlink}
+          >
+            <TodaysIcon /> <span>Today</span>
+          </Link>
+          <Link to="#contact" className={styles.navlink}>
+            <ContactIcon /> <span>Contact Us</span>
+          </Link>
+        </div>
       </header>
       <main className={styles.main}>{props.children}</main>
       <footer className={styles.footer}>
