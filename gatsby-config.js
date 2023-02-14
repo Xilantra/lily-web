@@ -38,9 +38,9 @@ module.exports = {
       options: {
         name: `Love, Lily Eatery`,
         short_name: `Lily Eatery`,
-        start_url: `/`,
+        start_url: `/today`,
         background_color: `#fff`,
-        theme_color: `#000`,
+        theme_color: `#fff`,
         display: `fullscreen`,
         icon: `src/assets/gatsby-monogram.png`,
       },
