@@ -1,10 +1,13 @@
 import React from "react";
 import * as styles from "./copy.module.css";
-import MarkdownText, { getText } from "../components/markdown-text";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import Section from "../components/section";
-import Heading from "../components/heading";
-import Container from "../components/container";
+import {
+  MarkdownText,
+  getText,
+  Section,
+  Heading,
+  Container,
+} from "gatsby-theme-landing-page";
 
 export default function Copy({ heading, secondaryHeading, content }) {
   return (

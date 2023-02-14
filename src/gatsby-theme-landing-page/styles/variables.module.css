@@ -5,7 +5,7 @@
 .root {
   /* typography */
   --font: "Inter", system-ui, sans-serif;
-  --font-heading: "Playfair Display", system-ui, sans-serif;
+  --font-heading: "Inter", system-ui, sans-serif;
   --line-height: 1.5;
   --line-height-heading: 1.25;
   --font-size-1: 12px;
