@@ -4,6 +4,11 @@
   padding-bottom: var(--space-6);
 }
 
+.wrapper {
+  width: 100%;
+  background-color: #ffeee2;
+}
+
 .container {
   flex-direction: column;
   gap: var(--space-5);

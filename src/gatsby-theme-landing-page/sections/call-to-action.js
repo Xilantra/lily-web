@@ -11,19 +11,21 @@ import {
 
 export default function CallToAction({ heading, secondaryHeading, content }) {
   return (
-    <Container id="contact" className={styles.container}>
-      <section className={styles.root}>
-        <Heading center>{heading}</Heading>
-        <Heading secondary center>
-          {secondaryHeading}
-        </Heading>
-        <div>
-          {content.map((c) => (
-            <Content key={c.id} {...c} />
-          ))}
-        </div>
-      </section>
-    </Container>
+    <div className={styles.wrapper}>
+      <Container id="contact" className={styles.container}>
+        <section className={styles.root}>
+          <Heading center>{heading}</Heading>
+          <Heading secondary center>
+            {secondaryHeading}
+          </Heading>
+          <div>
+            {content.map((c) => (
+              <Content key={c.id} {...c} />
+            ))}
+          </div>
+        </section>
+      </Container>
+    </div>
   );
 }
 

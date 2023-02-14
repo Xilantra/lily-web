@@ -10,7 +10,7 @@ import {
 
 export default function Testimonial({ heading, secondaryHeading, content }) {
   return (
-    <>
+    <div className={styles.container}>
       <Heading center>{heading}</Heading>
       <Heading secondary center>
         {secondaryHeading}
@@ -23,7 +23,7 @@ export default function Testimonial({ heading, secondaryHeading, content }) {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
