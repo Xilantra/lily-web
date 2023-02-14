@@ -11,7 +11,7 @@ import {
 
 export default function CallToAction({ heading, secondaryHeading, content }) {
   return (
-    <Container className={styles.container}>
+    <Container id="contact" className={styles.container}>
       <section className={styles.root}>
         <Heading center>{heading}</Heading>
         <Heading secondary center>

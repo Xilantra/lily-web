@@ -21,22 +21,27 @@
 
 .header {
   /* composes: container; */
+  display: flex;
+  justify-content: space-between;
   position: fixed;
-  padding: 1rem 1rem 2rem;
+  padding: 1rem 2rem 2rem;
   bottom: 0;
   left: 0;
   right: 0;
   text-align: center;
   z-index: 2;
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.4);
+  /* background-color: rgba(255, 255, 255, 0.4); */
 }
 
 @media screen and (min-width: 1000px) {
   .header {
     top: 0;
     bottom: unset;
-    padding: 1rem 1rem 1.5rem;
+    justify-content: center;
+    gap: var(--space-4);
+    padding: 0.5rem 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -45,7 +50,7 @@
   font-weight: bold;
   font-size: var(--font-size-3);
   font-family: var(--font-heading);
-  color: inherit;
+  /* color: inherit; */
 }
 
 .header a:hover,
@@ -60,7 +65,7 @@
 .footer {
   composes: container;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: var(--space-3);
   font-weight: bold;
   font-size: var(--font-size-2);
@@ -92,4 +97,42 @@
 
 .textFade {
   color: var(--text-fade-color) !important;
+}
+
+.navlink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-fade-color);
+  border-radius: 0.5rem;
+}
+
+.navlink svg {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--text-fade-color);
+}
+
+.navlink span {
+  display: none;
+}
+
+.navlink.active {
+  color: var(--text-color);
+}
+
+.navlink.active svg {
+  fill: var(--text-color);
+}
+
+@media screen and (min-width: 1000px) {
+  .navlink {
+    padding: 0.5rem 1rem;
+  }
+  .navlink svg {
+    display: none;
+  }
+  .navlink span {
+    display: block;
+  }
 }
