@@ -26,7 +26,7 @@ module.exports = {
   siteMetadata: {
     title: "Love, Lily Eatery",
     description:
-      "We believe in the simplicity and elegance of artisanal baking. Our micro-batch bakery is dedicated to crafting delicious and authentic breads, viennoiserie, pastries, pies and coffee, using only the finest, locally sourced ingredients.",
+      "We believe in the simplicity and elegance of artisanal baking. Our micro-batch bakery is dedicated to crafting delicious and authentic breads, viennoiserie, pastries, pies and coffee, using only the finest, imported sourced ingredients.",
   },
   plugins: [
     {
@@ -42,7 +42,7 @@ module.exports = {
         background_color: `#fbfbfb`,
         theme_color: `#fbfbfb`,
         display: `fullscreen`,
-        icon: `src/assets/gatsby-monogram.png`,
+        icon: `src/assets/lovelilyeatery-sm.svg`,
       },
     },
   ],
