@@ -70,6 +70,13 @@
   color: var(--link-hover-color);
 }
 
+.logo svg {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  fill: var(--text-color);
+}
+
 .main {
   flex: 1 0 auto;
 }
@@ -102,7 +109,20 @@
     flex-direction: row;
   }
 
+  .footerItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
   .footerText {
+    justify-content: flex-start;
+  }
+
+  .watermark {
+    justify-content: end;
   }
 }
 
