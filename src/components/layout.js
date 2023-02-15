@@ -68,7 +68,8 @@ export default function Layout(props) {
       <main className={styles.main}>{props.children}</main>
       <footer className={styles.footer}>
         <div className={styles.footerText}>
-          <span>© {new Date().getFullYear()} Love, Lily Eatery</span>
+          <div>© {new Date().getFullYear()} Love, Lily Eatery</div>
+          <div> (AS0453954-U)</div>
           {/* <a href="https://www.facebook.com/lovelilyeatery" target="_blank" rel="noreferrer">
             <FbIcons/>
             Facebook</a>  &middot;{` `}

@@ -18,9 +18,9 @@
   --font-weight-normal: 400;
   --font-weight-bold: 600;
   /* colors */
-  --text-color: rgb(22, 22, 22);
-  --text-color-secondary: black;
-  --text-fade-color: rgba(0, 0, 0, 0.32);
+  --text-color: rgb(24, 24, 24);
+  --text-color-secondary: #171717;
+  --text-fade-color: rgba(0, 0, 0, 0.4);
   --background-color: #fbfbfb;
   --link-color: rgb(22, 22, 22);
   --link-hover-color: #05a;
