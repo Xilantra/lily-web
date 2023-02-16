@@ -86,11 +86,12 @@
   margin-left: auto;
   margin-right: auto;
   padding: 1.5rem 3rem 8rem;
-  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   gap: var(--space-3);
+  width: 100%;
   font-size: var(--font-size-2);
   background-color: #ffeee2;
   color: rgba(0, 0, 0, 0.6);
@@ -100,6 +101,10 @@
   display: flex;
   align-items: center;
   gap: var(--space-2);
+}
+
+.logo {
+  order: 3;
 }
 
 @media screen and (min-width: 1000px) {
@@ -115,6 +120,7 @@
     justify-content: center;
     flex-grow: 1;
     flex-basis: 0;
+    order: unset;
   }
 
   .footerText {
@@ -123,6 +129,10 @@
 
   .watermark {
     justify-content: end;
+  }
+
+  .logo {
+    order: unset;
   }
 }
 
