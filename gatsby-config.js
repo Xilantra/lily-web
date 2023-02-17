@@ -33,7 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-theme-landing-page`,
       options: contentfulConfig,
-      downloadLocal: true,
+      // downloadLocal: true,
+      // https://www.gatsbyjs.com/plugins/gatsby-source-contentful/
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -44,7 +45,14 @@ module.exports = {
         background_color: `#fbfbfb`,
         theme_color: `#fbfbfb`,
         display: `fullscreen`,
-        icon: `src/assets/lovelilyeatery-sm.svg`,
+        icon: `src/assets/favicon.svg`,
+        icons: [
+          {
+            src: "src/assets/apple-icon.svg",
+            sizes: "500x500",
+            type: "image/svg+xml",
+          },
+        ],
       },
     },
   ],
