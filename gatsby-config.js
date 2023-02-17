@@ -45,14 +45,19 @@ module.exports = {
         background_color: `#fbfbfb`,
         theme_color: `#fbfbfb`,
         display: `fullscreen`,
-        icon: `src/assets/favicon.svg`,
-        icons: [
-          {
-            src: "src/assets/apple-icon.svg",
-            sizes: "500x500",
-            type: "image/svg+xml",
-          },
-        ],
+        icon: `src/assets/apple-icon.svg`,
+        // icons: [
+        //   {
+        //     src: "src/assets/favicon.svg",
+        //     sizes: "48x48",
+        //     type: "image/svg+xml",
+        //   },
+        //   {
+        //     src: "src/assets/apple-icon.svg",
+        //     sizes: "500x500",
+        //     type: "image/svg+xml",
+        //   },
+        // ],
       },
     },
   ],
