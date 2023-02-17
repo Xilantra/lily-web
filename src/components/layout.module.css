@@ -95,6 +95,10 @@
   font-size: var(--font-size-2);
   background-color: #ffeee2;
   color: rgba(0, 0, 0, 0.6);
+  /* background-image: url("./pattern.svg");
+  background-size: 5rem;
+  background-repeat: repeat;
+  background-position: top; */
 }
 
 .footerText {
